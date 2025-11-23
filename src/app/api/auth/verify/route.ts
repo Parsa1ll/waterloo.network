@@ -33,7 +33,11 @@ export async function POST(request: Request) {
                     },
                 });
 
-                await sendVerificationEmail(email, generatedCode);
+                const emailSent = await sendVerificationEmail(email, generatedCode);
+
+                if (!emailSent) {
+                    throw new Error('Failed to send email via Resend');
+                }
 
             } catch (e) {
                 console.error('DB/Email Error:', e);
