@@ -406,9 +406,9 @@ export const members: Member[] = [
     website: "https://parsaa.ca",
     program: "Mathematics",
     // options: engineering, design, product, growth, ai/ml, research, hardware, quant, software, finance, vc
-    roles: [],
+    roles: ["engineering", "design", "product", "growth", "software"],
     // options: fintech, ai, climate, healthcare, edtech, marketplaces, robotics, defense, hard tech, saas, consumer, creator tools
-    verticals: [],
+    verticals: ["ai", "saas", "consumer", "creator tools"],
     profilePic: "/photos/parsa.jpg",
     instagram: "https://instagram.com/parsa.1l",
     twitter: "https://x.com/parsaxa",
